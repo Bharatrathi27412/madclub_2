@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#07000E"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="100dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="355dp"
+            android:layout_height="100dp"
+            android:layout_margin="5px"
+            android:background="#8A2C02"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_1"
+                android:layout_width="355dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="#EECC8D"
+                android:visibility="visible"
+                android:hint="@string/amount" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5px"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px">
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:layout_width="20mm"
+                android:layout_height="wrap_content"
+                android:hint="@string/percent"
+                android:textSize="25dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+
+            <com.google.android.material.slider.Slider
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/slider1"
+                android:valueFrom="0.0"
+                android:valueTo="50.0" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Button1"
+            android:hint="@string/button"
+            android:textColor="#EECC8D"
+            android:background="#EECC8D"
+            style="@style/TextAppearance.MaterialComponents.Button">
+
+        </com.google.android.material.button.MaterialButton>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
